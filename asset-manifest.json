@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bethanys-kitchen/static/css/main.073c9b0a.css",
+    "main.js": "/bethanys-kitchen/static/js/main.1614540e.js",
+    "static/js/787.3fa50ef3.chunk.js": "/bethanys-kitchen/static/js/787.3fa50ef3.chunk.js",
+    "static/media/logo.svg": "/bethanys-kitchen/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/bethanys-kitchen/index.html",
+    "main.073c9b0a.css.map": "/bethanys-kitchen/static/css/main.073c9b0a.css.map",
+    "main.1614540e.js.map": "/bethanys-kitchen/static/js/main.1614540e.js.map",
+    "787.3fa50ef3.chunk.js.map": "/bethanys-kitchen/static/js/787.3fa50ef3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1614540e.js"
+  ]
+}
