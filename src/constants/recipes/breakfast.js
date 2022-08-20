@@ -5,12 +5,12 @@ export const breakfast = {
     description: 'This is a great recipe if you are craving eggs because you can choose to put any toppings in of your choice. I usually opt for ham and cheese, but I like to test with different combinations. So far, my favourite combination is a mixture of broccoli, cheese, mushroom, and proscuitto. The portions of toppings is flexible depending on how many toppings you add!',
     ingredients: ['3 Eggs', 'Butter', 'Handful of shredded cheese', 'Slices of ham (optional)'],
     steps: [
-      'Step 1: Whisk the eggs in a bowl with salt and pepper to taste', 
-      'Step 2: Melt butter on pan', 
-      'Step 3: Add eggs to pan and wait for edge to form on the bottom', 
-      'Step 4: Tilt the pan slightly for uncooked parts to get heat', 
-      'Step 5: Put in toppings of choice on one half of the omelette',
-      'Step 6: Fold omelette in half and slide gently onto plate'
+      'Whisk the eggs in a bowl with salt and pepper to taste', 
+      'Melt butter on pan', 
+      'Add eggs to pan and wait for edge to form on the bottom', 
+      'Tilt the pan slightly for uncooked parts to get heat', 
+      'Put in toppings of choice on one half of the omelette',
+      'Fold omelette in half and slide gently onto plate'
     ]
   },
 
@@ -19,10 +19,11 @@ export const breakfast = {
     subtitle: 'Fruit filled bowl!',
     description: 'I love eating this breakfast to get my fruits and protein in. I sometimes add some protein powder into this bowl, but I will always add a bunch of fruit. You can choose whichever fruits you want and add it after making the oatmeal.',
     ingredients: ['1 cup rolled oats', '5 strawberries', '1/2 banana', 'Handful of blueberries', '2 cups of almond milk'],
-    steps: ['Step 1: Put rolled oats and almond milk into saucepan and bring to a boil', 
-    'Step 2: Stir oatmeal on low heat until it thickens', 
-    'Step 3: Move oatmeal into a bowl and put in desired toppings'
-  ]
+    steps: [
+      'Put rolled oats and almond milk into saucepan and bring to a boil', 
+      'Stir oatmeal on low heat until it thickens', 
+      'Move oatmeal into a bowl and put in desired toppings'
+    ]
   },
 
   'Avocado Bagel': {
@@ -37,11 +38,11 @@ export const breakfast = {
       'Everything but the bagel seasoning (optional)'
     ],
     steps: [
-      'Step 1: Toast a bagel of your choice until golden brown',
-      'Step 2: Put a little bit of butter on the bagel so it melts fresh out of the toaster',
-      'Step 3: Cut the avocado and mash it gently onto the bagel',
-      'Step 4 (Optional): Pan fry an egg and add on top of the avocado',
-      'Step 5: Add everything but the bagel seasoning']
+      'Toast a bagel of your choice until golden brown',
+      'Put a little bit of butter on the bagel so it melts fresh out of the toaster',
+      'Cut the avocado and mash it gently onto the bagel',
+      'Pan fry an egg and add on top of the avocado',
+      'Add everything but the bagel seasoning']
   },
   
   'Scrambled Eggs': {
@@ -50,10 +51,10 @@ export const breakfast = {
     description: 'This is a simple recipe my sister taught me when I first moved out on my own. It is a great alternative when you get bored of scrambled eggs',
     ingredients: ['5 eggs'],
     steps: [
-      'Step 1: Whisk eggs in a bowl until eggs are completely beaten with no thick parts', 
-      'Step 2: Add in salt and pepper to taste', 
-      'Step 3: On low-medium heat, pour eggs into pan and stir consistently. Make sure there are no solid chunks. Turn down heat if solid chunks are quickly forming', 
-      'Step 4: When eggs are 3/4 cooked, take off the heat and serve immediately'
+      'Whisk eggs in a bowl until eggs are completely beaten with no thick parts', 
+      'Add in salt and pepper to taste', 
+      'On low-medium heat, pour eggs into pan and stir consistently. Make sure there are no solid chunks. Turn down heat if solid chunks are quickly forming', 
+      'When eggs are 3/4 cooked, take off the heat and serve immediately'
     ]
   },
 
@@ -63,7 +64,8 @@ export const breakfast = {
     description: 'Like the oatmeal recipe, this recipe calls for as many different fruits as you would like',
     ingredients: ['2 cups Greek yogurt', '1/2 cup sliced mango', 'Handful of blueberries', '6 strawberries', '1/2 banana'],
     steps: [
-      'Step 1: Slice fruits', 'Step 2: Place yogurt in bowl and add fruit toppings of choice'
+      'Slice fruits', 
+      'Place yogurt in bowl and add fruit toppings of choice'
     ]
   }
 }

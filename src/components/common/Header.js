@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -24,14 +24,16 @@ export const Header = (props) => {
               <NavDropdown title='Recipes' href='recipes' id='collasible-nav-dropdown'>
                 { headerOptions.map(option => 
                   <NavDropdown.Item 
-                    onClick={ () => setView(option.title) }
+                    onClick={ () => {
+                      setView(option.title)
+                    } }
                   >
                     { option.title }
                   </NavDropdown.Item>
                 )}
               </NavDropdown>
-              <Nav.Link href='/about'>About</Nav.Link>
-              <Nav.Link href='/contact'>Contact</Nav.Link>
+              <Nav.Link onClick={ () => setView('about')}>About</Nav.Link>
+              <Nav.Link onClick={ () => setView('contact')}>Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles.css'
 
 import { breakfast } from '../../constants/recipes/breakfast';
 import { lunch } from '../../constants/recipes/lunch';
@@ -29,8 +30,8 @@ export const Steps = (props) => {
 
   const list = genreToMap()[foodToDisplay].steps
 
-  const listItems = list.map((d) => 
-    <li key={d}>{d}</li>
+  const listItems = list.map((step, index) => 
+    <p className='recipeTab' key={ step }>Step { index + 1 }: { step }</p>
   );
 
   return (

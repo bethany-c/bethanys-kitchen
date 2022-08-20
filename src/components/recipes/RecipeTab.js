@@ -9,10 +9,7 @@ import Ingredients from './Ingredients';
 import Steps from './Steps';
 
 import { tabOptions, tabKeys } from '../../constants/tabOptions';
-import { breakfast } from '../../constants/recipes/breakfast';
-import { lunch } from '../../constants/recipes/lunch';
-import { dinner } from '../../constants/recipes/dinner';
-import { snack } from '../../constants/recipes/snack';
+
 
 export const RecipeTab = (props) => {
   const {
@@ -24,7 +21,7 @@ export const RecipeTab = (props) => {
 
 
   return (
-    <div className='d-flex justify-content-evenly'>
+    <div className='d-flex justify-content-evenly pb-5'>
       <Col md={ 8 }>
         <Tabs
           activeKey={ key }
@@ -34,14 +31,7 @@ export const RecipeTab = (props) => {
         >
           { tabOptions.map(t => (
             <Tab eventKey={ t.title.toLowerCase() } title={ t.title }>
-              {/* <Card>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                  <Card.Title>
-                    henlo
-                  </Card.Title>
-                </Card.Body>
-              </Card> */}
+
               <p>{ key }</p>
               { key === tabKeys[0] && (
                 <Description 
