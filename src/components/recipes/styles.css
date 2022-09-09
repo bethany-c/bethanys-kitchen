@@ -1,3 +1,20 @@
-.recipeTab{
+.recipeTab {
   text-align: left;
+}
+
+.cardSize {
+  height: 80%;
+  width: 80%;
+}
+
+.contact-spacer {
+  padding: 50px;
+}
+
+.contact-row {
+  padding-bottom: 200px;
+}
+
+.map-spacer {
+  padding-right: 25px;
 }

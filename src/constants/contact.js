@@ -1,20 +1,27 @@
 export const contact = [
   {
-    title: 'Email Me',
-    subtitle: 'Email me @ ',
+    title: 'Email',
     href: `mailto:bethanylyc@gmail.com`,
     link: 'bethanylyc@gmail.com'
   },
   {
+    title: 'Phone',
+    href: '(403)618-6262',
+    link: '(403)618-6262'
+  },
+  {
+    title: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/bethany-chu-704421180/',
+    link: 'Connect'
+  },
+  {
     title: 'Github',
-    subtitle: 'Check out my other projects on my ',
-    href: `github.com/bethany-c`,
-    link: 'GitHub!'
+    href: `https://github.com/bethany-c`,
+    link: 'Launch it!'
   },
   {
     title: 'Website',
-    subtitle: 'Learn more about me on my ',
-    href: `github.com/bethany-c`,
-    link: 'personal website'
+    href: `https://github.com/bethany-c`,
+    link: 'Launch it!'
   }
 ]

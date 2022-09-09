@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Col from 'react-bootstrap/Col';
@@ -16,9 +16,7 @@ export const RecipeTab = (props) => {
     recipe,
     genre
   } = props;
-  // props to pass in: which food being displayed
   const [key, setKey] = useState('description')
-
 
   return (
     <div className='d-flex justify-content-evenly pb-5'>
@@ -31,29 +29,29 @@ export const RecipeTab = (props) => {
         >
           { tabOptions.map(t => (
             <Tab eventKey={ t.title.toLowerCase() } title={ t.title }>
+              <div className='p-3'>
+                { key === tabKeys[0] && (
+                  <Description 
+                    foodToDisplay={ recipe }
+                    genre={ genre }
+                  />
+                ) }
 
-              <p>{ key }</p>
-              { key === tabKeys[0] && (
-                <Description 
-                  foodToDisplay={ recipe }
-                  genre={ genre }
-                />
-              ) }
+                { key === tabKeys[1] && (
+                  <Ingredients 
+                    foodToDisplay={ recipe }
+                    genre={ genre }
+                  />
+                ) }
 
-              { key === tabKeys[1] && (
-                <Ingredients 
-                  foodToDisplay={ recipe }
-                  genre={ genre }
-                />
-              ) }
-
-              { key === tabKeys[2] && (
-                <Steps
-                  foodToDisplay={ recipe }
-                  genre={ genre }
-                />
-              ) }
-          </Tab>
+                { key === tabKeys[2] && (
+                  <Steps
+                    foodToDisplay={ recipe }
+                    genre={ genre }
+                  />
+                ) }
+              </div>
+            </Tab>
           ))}
         </Tabs>
       </Col>

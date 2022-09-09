@@ -28,15 +28,10 @@ function App() {
     setRecipe(clickedRecipe);
   }
 
-  const onLinkChange = (clickedView) => {
-    setRecipe('');
-    setGenre('');
-    setView(clickedView);
-  }
-
   return (
     <div className="App">
       <Header 
+        onViewChange={ onViewChange }
         setView={ setView }
       />
       { view === views.allRecipes && (

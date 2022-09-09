@@ -36,7 +36,7 @@ export const RecipeHeader = (props) => {
       <img 
         src={ imgSrc ? imgSrc : defaultImg } 
         alt='henlo' 
-        width={ 400 }
+        height={ 400 }
       />
     </div>
     

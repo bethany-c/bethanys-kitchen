@@ -10,7 +10,8 @@ import '../../App.css';
 
 export const Header = (props) => {
   const {
-    setView
+    setView,
+    onViewChange
   } = props;
 
 
@@ -24,9 +25,7 @@ export const Header = (props) => {
               <NavDropdown title='Recipes' href='recipes' id='collasible-nav-dropdown'>
                 { headerOptions.map(option => 
                   <NavDropdown.Item 
-                    onClick={ () => {
-                      setView(option.title)
-                    } }
+                    onClick={ () => onViewChange(option.title) }
                   >
                     { option.title }
                   </NavDropdown.Item>
@@ -42,7 +41,8 @@ export const Header = (props) => {
 };
 
 Header.propTypes = {
-  setView: PropTypes.func.isRequired
+  setView: PropTypes.func.isRequired,
+  onViewChange: PropTypes.func.isRequired
 };
 
 export default Header;

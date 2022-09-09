@@ -10,7 +10,8 @@ export const snack = {
       'Mix together until a thick consistency forms. If it is watery, add in more rolled oats', 
       'Add in chocolate chips (optional)', 
       'Bake at 325 for 10 minutes'
-    ]
+    ],
+    src: require('../../images/snacks/oatmeal_bites.jpg')
   },
   'Banana bread': {
     title: 'Banana bread',
@@ -21,7 +22,9 @@ export const snack = {
       'In a mixing bowl, combine butter, sugar, eggs, and bananas until a thick, smooth consistency', 
       'Mix baking soda with water, then put into mixing bowl along with flour', 
       'Stir until mixed well, should be a thick consistency', 
-      'Bake in 350 degrees for ~55-65 minutes. Check the progress by using a toothpick to poke a hole in the center. When the toothpick comes out without any residue, the bread is ready']
+      'Bake in 350 degrees for ~55-65 minutes. Check the progress by using a toothpick to poke a hole in the center. When the toothpick comes out without any residue, the bread is ready'
+    ],
+    src: require('../../images/snacks/bananabread.jpg')
   },
 
   'Fruit Smoothie': {
@@ -34,7 +37,8 @@ export const snack = {
       'Put strawberries, blueberries, bananas, and yogurt into blender',
       'Add in milk until it reaches close to the top',
       'Blend'
-    ]
+    ],
+    src: require('../../images/snacks/smoothie.jpg')
   },
 
   'Bruschetta': {
@@ -52,6 +56,19 @@ export const snack = {
       'Slice the baguette into bite sized pieces and toast in oven until edges are crisp',
       'Take an uncut clove of garlic and brush it on the toasted slices fresh out of the oven',
       'Search garlic toasted baguette slices with tomato mixture'
-    ]
+    ],
+    src: require('../../images/snacks/bruschetta.jpeg')
+  },
+  'Charcuterie': {
+    title: 'Charcuterie Board',
+    subtitle: 'Cheese and crackers classic',
+    description: 'A charcuterie board is amazing for an appetizer to share. The Cheese Boutique is an amazing for a fresh selection of random cheeses to try out. Along with different cheeses and crackers, I like to add some proscuitto or proscuitto wrapped around cantaloupe. I like to start out with a few cheeses and crackers, then bring out more depending on how many are used.',
+    ingredients: ['2-3 different cheeses', '10-15 crackers', '1/2 cantaloupe', '300g proscuitto', '1/2 baguette'],
+    steps: [
+      'Cut up the baguette into slices',
+      'Arrange cheese onto board with some olives on the side',
+      'Slice cantaloupe and wrap proscuitto around it'
+    ],
+    src: require('../../images/snacks/charcuterie.jpg')
   }
 }
