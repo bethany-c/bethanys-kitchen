@@ -28,7 +28,7 @@ export const RecipeHeader = (props) => {
   }
 
   const imgSrc = genreToMap()[recipe].src
-  const defaultImg = require('../../images/RecipeHome/allCollage.jpg')
+  const defaultImg = require('../../images/RecipeHome/comingSoon.jpeg')
 
   return (
     <div className='pb-5'>

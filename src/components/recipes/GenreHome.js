@@ -11,7 +11,9 @@ import { lunch } from '../../constants/recipes/lunch';
 import { dinner } from '../../constants/recipes/dinner';
 import { snack } from '../../constants/recipes/snack';
 
-import './styles.css';
+import comingSoon from '../../images/RecipeHome/comingSoon.jpeg';
+
+import '../common/styles.css';
 
 export const GenreHome = (props) => {
   const {
@@ -21,6 +23,8 @@ export const GenreHome = (props) => {
 
   const genreToMap = () => {
     switch (genre) {
+      case 'All':
+        return Object.assign({}, breakfast, lunch, dinner, snack);
       case 'Breakfast':
         return breakfast;
       case 'Lunch':
@@ -34,41 +38,38 @@ export const GenreHome = (props) => {
     }
   }
 
-
   return (
     <>
       <h1 className='p-3'>{ genre } Recipes</h1>
 
       <Container>
-        { genre !== 'All' && (
-          <Row md={ 3 } lg={ 2 } className="align-items-center">
-            { Object.entries(genreToMap()).map(([key, val]) => (
-              <Col className='p-3'>
-                <Card>
-                  <Card.Img variant="top" src={ val.src } alt='henlo'/>
-                  <Card.Body>
-                    <Card.Title>
-                      { key }
-                    </Card.Title>
-                    <Card.Text>
-                      { val.subtitle }
-                    </Card.Text>
-                  </Card.Body>
-                  <div className='d-flex justify-content-evenly pb-3'>
-                    <Col md={ 3 }>
-                      <Button
-                        variant="outline-secondary"
-                        onClick={ () => onRecipeView(key) }
-                      >
-                        Recipes
-                      </Button>
-                    </Col>
-                  </div>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        )}
+        <Row md={ 3 } lg={ 2 } className="align-items-center">
+          { Object.entries(genreToMap()).map(([key, val]) => (
+            <Col className='p-3'>
+              <Card>
+                <Card.Img variant="top" src={ val.src ? val.src : comingSoon } alt='henlo'/>
+                <Card.Body>
+                  <Card.Title>
+                    { key }
+                  </Card.Title>
+                  <Card.Text>
+                    { val.subtitle }
+                  </Card.Text>
+                </Card.Body>
+                <div className='d-flex justify-content-evenly pb-3'>
+                  <Col md={ 3 }>
+                    <Button
+                      variant="outline-secondary"
+                      onClick={ () => onRecipeView(key) }
+                    >
+                      Recipes
+                    </Button>
+                  </Col>
+                </div>
+              </Card>
+            </Col>
+          ))}
+        </Row>
       </Container>
 
     </>

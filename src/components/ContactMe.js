@@ -6,7 +6,7 @@ import { AiTwotoneMail, AiFillLinkedin, AiFillGithub, AiFillIeCircle, AiFillPhon
 import { Map, Marker, ZoomControl } from 'pigeon-maps';
 
 import { contact } from '../constants/contact';
-import '../components/recipes/styles.css';
+import '../components/common/styles.css';
 
 const getIcon = (num) => {
   switch (num+1) {
@@ -31,7 +31,7 @@ export const ContactMe = () => {
   const [zoom, setZoom] = useState(11);
 
   return(
-    <div>
+    <div className='contact-body'>
       <h3>Let's get in touch!</h3>
       <div className='contact-spacer'>
         <Row xs={ 2 } sm={ 3 } md={ 5 } style={{ padding: 10 }}>
@@ -44,7 +44,12 @@ export const ContactMe = () => {
           )) }
         </Row>
       </div>
-      <div className='pr-3'>
+      <h5>Find me</h5>
+      <div className='center'>
+        <hr style={{ width:'50%' }} />
+      </div>
+      
+      <div className='p-3'>
         <Map 
           height={ 300 } 
           width={ 1300 }

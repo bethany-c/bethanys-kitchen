@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.css'
+import '../common/styles.css';
 
 import { breakfast } from '../../constants/recipes/breakfast';
 import { lunch } from '../../constants/recipes/lunch';

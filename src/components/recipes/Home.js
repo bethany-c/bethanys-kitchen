@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 
 import { headerOptions } from '../../constants/headerOptions';
-import all from '../../images/RecipeHome/allCollage.jpg';
+import all from '../../images/RecipeHome/allCollage.jpeg';
 import breakfast from '../../images/RecipeHome/breakfastCollage.jpg';
 import lunch from '../../images/RecipeHome/lunchCollage.jpg';
 import dinner from '../../images/RecipeHome/dinnerCollage.png';

@@ -1,0 +1,34 @@
+.recipeTab {
+  text-align: left;
+}
+
+.cardSize {
+  height: 80%;
+  width: 80%;
+}
+
+.contact-spacer {
+  padding: 50px;
+}
+
+.contact-body {
+  padding-top: 50px;
+}
+
+.map-spacer {
+  padding-right: 25px;
+}
+
+.crimson {
+  background-color: crimson;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opac {
+  opacity: 0.6;
+}

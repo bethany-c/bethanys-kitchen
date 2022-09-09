@@ -11,6 +11,9 @@ import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
 
 import { views } from './constants/views';
+import contactImg from './images/backgrounds/contact.jpeg';
+import landingImg from './images/backgrounds/landing.jpeg';
+import './components/common/styles.css';
 
 function App() {
 
@@ -35,9 +38,11 @@ function App() {
         setView={ setView }
       />
       { view === views.allRecipes && (
-        <Home 
-          onViewChange={ onViewChange }
-        />
+        <div style={{ backgroundImage:`url(${ landingImg })` }}>
+          <Home 
+            onViewChange={ onViewChange }
+          />
+        </div>
       )}
       { genre !== '' && recipe === '' && (
         <GenreHome 
@@ -63,7 +68,9 @@ function App() {
         </div>
       )}
             { recipe === '' && genre === '' && view === 'contact' && (
-        <div className='pt-5'>
+        <div style={{ 
+          backgroundImage:`url(${ contactImg })` 
+        }}>
           <ContactMe />
         </div>
       )}
