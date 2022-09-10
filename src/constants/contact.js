@@ -2,12 +2,12 @@ export const contact = [
   {
     title: 'Email',
     href: `mailto:bethanylyc@gmail.com`,
-    link: 'bethanylyc@gmail.com'
+    link: 'Reach Out!'
   },
   {
     title: 'Phone',
     href: '(403)618-6262',
-    link: '(403)618-6262'
+    link: 'Contact Me!'
   },
   {
     title: 'LinkedIn',

@@ -3,6 +3,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Map, Marker, ZoomControl } from 'pigeon-maps';
 import { GiWorld, GiLaptop, GiCook, GiRotaryPhone } from 'react-icons/gi';
+import me from '../images/me.jpg';
+import './common/styles.css';
 
 export const AboutMe = () => {
 
@@ -12,10 +14,13 @@ export const AboutMe = () => {
   const [zoomB, setZoomB] = useState(11);
 
   return (
-    <div>
-      <p>Hi! I'm Bethany</p>
-
+    <div className='p-3'>
+      <h5>Hi! I'm Bethany</h5>
+      <div className='pb-5 pt-3'>
+        <img className='circular_image' alt='me' src={ me }/>
+      </div>
       <GiWorld/><p>I was born and raised in Calgary, but I moved to Toronto to pursue a computer engineering degree at the University of Toronto.</p>
+
       <Row md={ 2 } className='p-3'>
         <Col className='pl-4'>
           <Map 
@@ -52,9 +57,9 @@ export const AboutMe = () => {
 
       <GiLaptop/><p>I have experience in front end, back end, and full stack development</p>
 
-      <GiCook/><p>Asides from school, I love cooking. I have created this website to combine my passion for cooking with my interest in web development so that I can connect with the fellow foodies.</p>
+      <GiCook/><p>Asides from school, I love cooking. I have created this website to combine my passion for cooking with my interest in web development so that I can connect with fellow foodies.</p>
 
-      <GiRotaryPhone/><p>Feel free to reach out to me or go to my website if you want to chat!</p>
+      <GiRotaryPhone/><p>Feel free to <a href='mailto:bethanylyc@gmail.com' target='_blank' rel='noopener noreferrer'>email</a> me if you want to chat or go to my <a href='https://github.com/bethany-c' target='_blank' rel='noopener noreferrer'>website</a> to learn more about me!</p>
     </div>
   )
 

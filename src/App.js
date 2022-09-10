@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './components/common/styles.css';
 
 import Header from './components/common/Header';
 import RecipeTab from './components/recipes/RecipeTab';
@@ -11,7 +12,7 @@ import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
 
 import { views } from './constants/views';
-import contactImg from './images/backgrounds/contact.jpeg';
+import contactImg from './images/backgrounds/contact1.jpeg';
 import landingImg from './images/backgrounds/landing.jpeg';
 import './components/common/styles.css';
 
@@ -63,14 +64,14 @@ function App() {
         </div>
       )}
       { recipe === '' && genre === '' && view === 'about' && (
-        <div className='pt-5'>
+        <div className='outerOpac'>
+          <div className='innerAbout'></div>
           <AboutMe />
         </div>
       )}
-            { recipe === '' && genre === '' && view === 'contact' && (
-        <div style={{ 
-          backgroundImage:`url(${ contactImg })` 
-        }}>
+      { recipe === '' && genre === '' && view === 'contact' && (
+        <div className='outerOpac'>
+          <div className='innerContact'></div>
           <ContactMe />
         </div>
       )}
