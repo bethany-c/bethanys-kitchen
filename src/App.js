@@ -12,7 +12,6 @@ import AboutMe from './components/AboutMe';
 import ContactMe from './components/ContactMe';
 
 import { views } from './constants/views';
-import contactImg from './images/backgrounds/contact1.jpeg';
 import landingImg from './images/backgrounds/landing.jpeg';
 import './components/common/styles.css';
 

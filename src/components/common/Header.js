@@ -26,6 +26,7 @@ export const Header = (props) => {
                 { headerOptions.map(option => 
                   <NavDropdown.Item 
                     onClick={ () => onViewChange(option.title) }
+                    key={ option.title }
                   >
                     { option.title }
                   </NavDropdown.Item>

@@ -36,7 +36,7 @@ export const Home = (props) => {
 
 
       { headerOptions.map(i => (
-        <div className='d-flex justify-content-evenly pb-5'>
+        <div className='d-flex justify-content-evenly pb-5' key={ i.title }>
           <Col md={ 4 }>
             <Card>
               <Card.Img variant="top" src={ getSrc(i.title) }/>
